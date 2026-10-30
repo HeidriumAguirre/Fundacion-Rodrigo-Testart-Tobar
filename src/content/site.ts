@@ -4,7 +4,7 @@ export const site = {
   tagline: "Salud integral para quienes más lo necesitan",
   description:
     "Fundación Dr. Rodrigo Testart Tobar: creamos esta fundación para apoyar la salud integral y facilitar el acceso a terapias esenciales como la ozonoterapia, la medicina ortomolecular y los suplementos.",
-  url: "https://fundacion-rodrigo-testart-tobar.vercel.app",
+  url: "https://fundacionrodrigotestart.vercel.app",
   locale: "es_CL",
 } as const;
 
