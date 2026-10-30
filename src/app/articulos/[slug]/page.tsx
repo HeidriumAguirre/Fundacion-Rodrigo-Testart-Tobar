@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -46,35 +46,35 @@ export default async function ArticuloPage({ params }: Params) {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-turq-800">
+      <section className="relative overflow-hidden bg-gradient-to-b from-turq-200 via-turq-100 to-turq-50">
         <div
-          className="pointer-events-none absolute -left-20 -top-24 h-80 w-80 rounded-full bg-turq-500/20 blur-3xl"
+          className="pointer-events-none absolute -left-20 -top-24 h-80 w-80 rounded-full bg-white/70 blur-3xl"
           aria-hidden="true"
         />
         <div className="page-wrap relative py-16 sm:py-20">
           <Link
             href="/articulos"
-            className="text-sm font-medium text-turq-300 transition hover:text-turq-200"
+            className="text-sm font-medium text-turq-600 transition hover:text-turq-700"
           >
             ← Artículos
           </Link>
           <div className="mt-6 max-w-3xl">
-            <div className="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+            <div className="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
               <span>{artículo.category}</span>
               <span className="h-1 w-1 rounded-full bg-turq-400" />
-              <span className="normal-case tracking-normal text-turq-100/60">
+              <span className="normal-case tracking-normal text-ink/55">
                 {artículo.dateLabel}
               </span>
               <span className="h-1 w-1 rounded-full bg-turq-400" />
-              <span className="normal-case tracking-normal text-turq-100/60">
+              <span className="normal-case tracking-normal text-ink/55">
                 {artículo.readingTime}
               </span>
             </div>
-            <h1 className="mt-4 font-display text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-[3rem]">
+            <h1 className="mt-4 font-display text-3xl font-bold leading-tight text-turq-800 sm:text-4xl lg:text-[3rem]">
               {artículo.title}
             </h1>
-            <p className="mt-5 text-[1.05rem] leading-relaxed text-turq-100/85">{artículo.excerpt}</p>
-            <p className="mt-6 text-sm text-turq-100/60">Por {artículo.author}</p>
+            <p className="mt-5 text-[1.05rem] leading-relaxed text-ink/70">{artículo.excerpt}</p>
+            <p className="mt-6 text-sm text-ink/55">Por {artículo.author}</p>
           </div>
         </div>
       </section>

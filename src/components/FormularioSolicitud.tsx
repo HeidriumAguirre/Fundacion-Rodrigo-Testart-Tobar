@@ -52,7 +52,7 @@ export function FormularioSolicitud() {
   if (estado === "exito") {
     return (
       <div className="rounded-3xl border border-turq-200 bg-turq-50 p-10 text-center">
-        <span className="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-turq-500 text-white">
+        <span className="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-turq-600 text-white">
           <CheckIcon className="h-8 w-8" />
         </span>
         <h3 className="mt-6 text-2xl font-bold">¡Gracias por tu mensaje!</h3>

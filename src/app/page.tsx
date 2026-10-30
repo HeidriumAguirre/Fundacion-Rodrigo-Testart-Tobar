@@ -171,10 +171,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-turq-800 py-20 text-white">
+      <section className="border-y border-turq-200 bg-turq-100 py-20">
         <div className="page-wrap">
           <SectionHeading
-            light
             eyebrow="Programa de subvención"
             title="Así funciona el acompañamiento a un paciente"
             description="Tres pasos claros, con evaluación individualizada y seguimiento permanente por parte del equipo de la fundación."
@@ -183,18 +182,18 @@ export default function HomePage() {
             {process.map((item) => (
               <div
                 key={item.step}
-                className="relative rounded-3xl border border-turq-700 bg-turq-900/40 p-8"
+                className="relative rounded-3xl border border-turq-200 bg-white/80 p-8"
               >
-                <span className="font-display text-4xl font-bold text-turq-400">{item.step}</span>
-                <h3 className="mt-4 font-display text-xl font-bold text-white">{item.title}</h3>
-                <p className="mt-3 text-[0.95rem] leading-relaxed text-turq-100/80">
+                <span className="font-display text-4xl font-bold text-turq-500">{item.step}</span>
+                <h3 className="mt-4 font-display text-xl font-bold text-turq-800">{item.title}</h3>
+                <p className="mt-3 text-[0.95rem] leading-relaxed text-ink/70">
                   {item.description}
                 </p>
               </div>
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Link href="/contacto#solicitud" className="btn btn-ghost-light">
+            <Link href="/contacto#solicitud" className="btn btn-primary">
               Presentar mi solicitud
               <ArrowRightIcon />
             </Link>
@@ -445,19 +444,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-turq-800 py-20 text-white">
+      <section className="border-y border-turq-200 bg-turq-100 py-20">
         <div className="page-wrap grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <p className="eyebrow text-turq-300">Transparencia</p>
-            <h2 className="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">
+            <p className="eyebrow">Transparencia</p>
+            <h2 className="mt-4 font-display text-3xl font-bold text-turq-800 sm:text-4xl">
               Cada peso tiene un destino y cada dato, una historia
             </h2>
-            <p className="mt-5 max-w-xl text-[1.02rem] leading-relaxed text-turq-100/85">
+            <p className="mt-5 max-w-xl text-[1.02rem] leading-relaxed text-ink/70">
               Publicamos cómo se usan los fondos, quién responde por la institución y qué documentos
               están disponibles. La fundación opera en fase de consolidación y reporta cada avance
               con la misma transparencia con la que acompaña a sus pacientes.
             </p>
-            <Link href="/transparencia" className="btn btn-ghost-light mt-8">
+            <Link href="/transparencia" className="btn btn-primary mt-8">
               Ver uso de los fondos
               <ArrowRightIcon />
             </Link>
@@ -469,65 +468,65 @@ export default function HomePage() {
               { titulo: "Difusión y educación", detalle: "Artículos y videos abiertos" },
               { titulo: "Gestión y operación", detalle: "Coordinación y soporte" },
             ].map((item) => (
-              <div key={item.titulo} className="rounded-2xl border border-turq-700 bg-turq-900/40 p-6">
-                <p className="font-display text-[1.05rem] font-bold text-white">{item.titulo}</p>
-                <p className="mt-1 text-sm text-turq-100/70">{item.detalle}</p>
+              <div key={item.titulo} className="rounded-2xl border border-turq-200 bg-white/80 p-6">
+                <p className="font-display text-[1.05rem] font-bold text-turq-800">{item.titulo}</p>
+                <p className="mt-1 text-sm text-ink/65">{item.detalle}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-turq-700 py-20 text-white">
+      <section className="relative overflow-hidden bg-turq-200 py-20">
         <div
-          className="pointer-events-none absolute -right-20 -top-20 h-80 w-80 rounded-full bg-turq-400/20 blur-3xl"
+          className="pointer-events-none absolute -right-20 -top-20 h-80 w-80 rounded-full bg-white/50 blur-3xl"
           aria-hidden="true"
         />
         <div className="page-wrap relative grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <QuoteIcon className="h-10 w-10 text-turq-300" />
-            <h2 className="mt-5 font-display text-3xl font-bold leading-tight text-white sm:text-4xl">
+            <QuoteIcon className="h-10 w-10 text-turq-600" />
+            <h2 className="mt-5 font-display text-3xl font-bold leading-tight text-turq-800 sm:text-4xl">
               Cada acción cuenta, y la tuya es un eslabón de esta cadena de ayuda
             </h2>
-            <p className="mt-5 max-w-xl text-[1.02rem] leading-relaxed text-turq-100/85">
+            <p className="mt-5 max-w-xl text-[1.02rem] leading-relaxed text-ink/75">
               Tu participación, ya sea a través de contribuciones únicas, aportes periódicos o la
               difusión de nuestra misión, fortalece nuestro impacto y nos permite alcanzar metas
               aún mayores. ¡Contáctanos contigo!
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link href="/contacto#donar" className="btn btn-ghost-light">
+              <Link href="/contacto#donar" className="btn btn-primary">
                 Cómo aportar
                 <ArrowRightIcon />
               </Link>
-              <Link href="/contacto" className="btn btn-ghost-light">
+              <Link href="/contacto" className="btn btn-outline">
                 Hablar con la fundación
               </Link>
             </div>
           </div>
 
-          <div className="rounded-3xl border border-turq-600/70 bg-turq-800/70 p-8 backdrop-blur">
-            <h3 className="font-display text-lg font-bold text-white">Datos para transferir</h3>
+          <div className="rounded-3xl border border-turq-300 bg-white/85 p-8 shadow-soft backdrop-blur">
+            <h3 className="font-display text-lg font-bold text-turq-800">Datos para transferir</h3>
             <dl className="mt-6 space-y-4 text-[0.95rem]">
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   Nombre
                 </dt>
-                <dd className="mt-1 text-turq-50">{donation.bank.holder}</dd>
+                <dd className="mt-1 text-ink/80">{donation.bank.holder}</dd>
               </div>
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   Cuenta corriente
                 </dt>
-                <dd className="mt-1 text-turq-50">{donation.bank.account}</dd>
+                <dd className="mt-1 text-ink/80">{donation.bank.account}</dd>
               </div>
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   RUT
                 </dt>
-                <dd className="mt-1 text-turq-50">{donation.bank.rut}</dd>
+                <dd className="mt-1 text-ink/80">{donation.bank.rut}</dd>
               </div>
             </dl>
-            <p className="mt-6 border-t border-turq-700 pt-5 text-sm text-turq-100/75">
+            <p className="mt-6 border-t border-turq-200 pt-5 text-sm text-ink/65">
               Envíanos un correo con tu nombre, RUT, teléfono y comprobante para acreditar tu
               contribución.
             </p>

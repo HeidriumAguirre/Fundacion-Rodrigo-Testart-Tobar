@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -70,34 +70,34 @@ export default function AcercaDePage() {
         </div>
       </section>
 
-      <section className="bg-turq-800 py-20 text-white">
+      <section className="border-y border-turq-200 bg-turq-100 py-20">
         <div className="page-wrap grid gap-12 lg:grid-cols-3">
           <div>
-            <p className="eyebrow text-turq-300">Misión</p>
-            <h2 className="mt-4 font-display text-2xl font-bold text-white">
+            <p className="eyebrow text-turq-600">Misión</p>
+            <h2 className="mt-4 font-display text-2xl font-bold text-turq-800">
               Brindar el respaldo económico necesario para el acceso a terapias esenciales
             </h2>
-            <p className="mt-4 text-[0.98rem] leading-relaxed text-turq-100/80">
+            <p className="mt-4 text-[0.98rem] leading-relaxed text-ink/70">
               Acompañar a pacientes con enfermedades crónicas para que un obstáculo económico no
               impida recibir un tratamiento que puede mejorar su salud y su calidad de vida.
             </p>
           </div>
           <div>
-            <p className="eyebrow text-turq-300">Visión</p>
-            <h2 className="mt-4 font-display text-2xl font-bold text-white">
+            <p className="eyebrow text-turq-600">Visión</p>
+            <h2 className="mt-4 font-display text-2xl font-bold text-turq-800">
               Construir una sólida red de apoyo mutuo
             </h2>
-            <p className="mt-4 text-[0.98rem] leading-relaxed text-turq-100/80">
+            <p className="mt-4 text-[0.98rem] leading-relaxed text-ink/70">
               Un espacio donde también puedes encontrar ayuda cuando lo necesites, y donde la
               solidaridad y la colaboración transforman la salud y la calidad de vida.
             </p>
           </div>
           <div>
-            <p className="eyebrow text-turq-300">Compromiso</p>
-            <h2 className="mt-4 font-display text-2xl font-bold text-white">
+            <p className="eyebrow text-turq-600">Compromiso</p>
+            <h2 className="mt-4 font-display text-2xl font-bold text-turq-800">
               Cada acción cuenta
             </h2>
-            <p className="mt-4 text-[0.98rem] leading-relaxed text-turq-100/80">
+            <p className="mt-4 text-[0.98rem] leading-relaxed text-ink/70">
               Tu participación, ya sea a través de contribuciones únicas, aportes periódicos o la
               difusión de nuestra misión, fortalece nuestro impacto y nos permite alcanzar metas
               aún mayores. Agradecemos tu generosidad mediante aportes que permiten sostener el
@@ -218,16 +218,16 @@ export default function AcercaDePage() {
         </div>
       </section>
 
-      <section className="bg-turq-700 py-16 text-white">
+      <section className="bg-turq-200 py-16">
         <div className="page-wrap flex flex-col items-center gap-6 text-center">
-          <h2 className="max-w-2xl text-2xl font-bold text-white sm:text-3xl">
+          <h2 className="max-w-2xl text-2xl font-bold text-turq-800 sm:text-3xl">
             ¿Tienes un tratamiento que necesitas y no puedes cubrir?
           </h2>
-          <p className="max-w-xl text-[1.02rem] leading-relaxed text-turq-100/85">
+          <p className="max-w-xl text-[1.02rem] leading-relaxed text-ink/70">
             Escríbenos y te orientamos. Atendemos de lunes a viernes, de 09:00 a 18:00 horas.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="/contacto#solicitud" className="btn btn-ghost-light">
+            <Link href="/contacto#solicitud" className="btn btn-primary">
               Solicitar apoyo
               <ArrowRightIcon />
             </Link>
@@ -235,7 +235,7 @@ export default function AcercaDePage() {
               href="https://wa.me/56955225749"
               target="_blank"
               rel="noreferrer"
-              className="btn btn-ghost-light"
+              className="btn btn-primary"
             >
               <WhatsAppIcon />
               {contact.whatsappDisplay}

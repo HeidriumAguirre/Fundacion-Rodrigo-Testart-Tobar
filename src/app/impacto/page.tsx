@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
 import { ArrowRightIcon, CheckIcon, YoutubeIcon } from "@/components/icons";
 import { PageBanner, SectionHeading } from "@/components/ui";
-import { contact, stats } from "@/content/site";
+import { contact } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Impacto",
@@ -121,10 +121,9 @@ export default function ImpactoPage() {
         </div>
       </section>
 
-      <section className="bg-turq-800 py-20 text-white">
+      <section className="border-y border-turq-200 bg-turq-100 py-20">
         <div className="page-wrap">
           <SectionHeading
-            light
             eyebrow="Ozonoterapia en acción"
             title="El doctor explica, en videos breves, cómo funciona cada tratamiento"
             description="Publicamos episodios de forma continua y los compartimos con pacientes y comunidad."
@@ -136,16 +135,16 @@ export default function ImpactoPage() {
                 href={`https://www.youtube.com/watch?v=${video.id}`}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-start gap-4 rounded-2xl border border-turq-700 bg-turq-900/40 p-6 transition hover:-translate-y-1 hover:border-turq-500"
+                className="group flex items-start gap-4 rounded-2xl border border-turq-200 bg-white/80 p-6 transition hover:-translate-y-1 hover:border-turq-500"
               >
-                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-turq-400/20 text-turq-200 transition group-hover:bg-turq-400/35">
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-turq-200 text-turq-700 transition group-hover:bg-turq-300">
                   <YoutubeIcon className="h-5 w-5" />
                 </span>
                 <span>
-                  <span className="block font-display text-[1.05rem] font-bold text-white">
+                  <span className="block font-display text-[1.05rem] font-bold text-turq-800">
                     {video.title}
                   </span>
-                  <span className="mt-1 block text-sm text-turq-100/60">{video.duration}</span>
+                  <span className="mt-1 block text-sm text-ink/55">{video.duration}</span>
                 </span>
               </a>
             ))}
@@ -155,7 +154,7 @@ export default function ImpactoPage() {
               href="https://www.youtube.com/channel/UColAFF3-rmaK_FpoOT1pbjQ"
               target="_blank"
               rel="noreferrer"
-              className="btn btn-ghost-light"
+              className="btn btn-primary"
             >
               Ver el canal completo
               <ArrowRightIcon />

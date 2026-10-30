@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -43,32 +43,32 @@ export default async function ServicioPage({ params }: Params) {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-turq-800">
+      <section className="relative overflow-hidden bg-gradient-to-b from-turq-200 via-turq-100 to-turq-50">
         <div
-          className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-turq-500/25 blur-3xl"
+          className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-white/70 blur-3xl"
           aria-hidden="true"
         />
         <div className="page-wrap relative grid items-center gap-12 py-16 lg:grid-cols-2 lg:py-20">
           <div>
             <Link
               href="/servicios"
-              className="text-sm font-medium text-turq-300 transition hover:text-turq-200"
+              className="text-sm font-medium text-turq-600 transition hover:text-turq-700"
             >
               ← Servicios y productos
             </Link>
-            <p className="mt-6 text-xs font-bold uppercase tracking-[0.16em] text-turq-300">
+            <p className="mt-6 text-xs font-bold uppercase tracking-[0.16em] text-turq-600">
               {servicio.eyebrow}
             </p>
-            <h1 className="mt-3 font-display text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h1 className="mt-3 font-display text-3xl font-bold leading-tight text-turq-800 sm:text-4xl lg:text-5xl">
               {servicio.title}
             </h1>
-            <p className="mt-5 max-w-xl text-[1.05rem] leading-relaxed text-turq-100/85">
+            <p className="mt-5 max-w-xl text-[1.05rem] leading-relaxed text-ink/70">
               {servicio.subtitle}
             </p>
             <ul className="mt-8 grid gap-3">
               {servicio.highlights.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-turq-100/90">
-                  <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-turq-400/20 text-turq-200">
+                <li key={item} className="flex items-start gap-3 text-ink/75">
+                  <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white text-turq-700">
                     <CheckIcon className="h-3.5 w-3.5" />
                   </span>
                   {item}
@@ -76,7 +76,7 @@ export default async function ServicioPage({ params }: Params) {
               ))}
             </ul>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link href="/contacto#solicitud" className="btn btn-ghost-light">
+              <Link href="/contacto#solicitud" className="btn btn-primary">
                 Solicitar apoyo
                 <ArrowRightIcon />
               </Link>
@@ -84,7 +84,7 @@ export default async function ServicioPage({ params }: Params) {
                 href="https://wa.me/56955225749"
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-ghost-light"
+                className="btn btn-outline"
               >
                 <WhatsAppIcon />
                 Escribir por WhatsApp
@@ -92,7 +92,7 @@ export default async function ServicioPage({ params }: Params) {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-[2rem] border border-turq-700 shadow-card">
+          <div className="overflow-hidden rounded-[2rem] border border-turq-200 shadow-card">
             <Image
               src={servicio.image}
               alt={servicio.imageAlt}

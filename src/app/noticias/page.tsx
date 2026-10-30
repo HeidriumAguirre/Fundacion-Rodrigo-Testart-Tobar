@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const estadoStyles = {
-  Activo: "bg-turq-500 text-white",
+  Activo: "bg-turq-600 text-white",
   Continuo: "bg-turq-100 text-turq-800",
   Próximamente: "bg-cream text-ink/70",
 } as const;

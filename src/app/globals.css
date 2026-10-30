@@ -110,16 +110,6 @@
     background-color: var(--color-turq-50);
   }
 
-  .btn-ghost-light {
-    border: 1.5px solid rgb(255 255 255 / 0.45);
-    color: #ffffff;
-    background-color: rgb(255 255 255 / 0.08);
-  }
-
-  .btn-ghost-light:hover {
-    background-color: rgb(255 255 255 / 0.18);
-  }
-
   .eyebrow {
     display: inline-flex;
     align-items: center;

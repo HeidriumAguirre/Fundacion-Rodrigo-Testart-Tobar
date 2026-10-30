@@ -34,22 +34,22 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50">
-      <div className="hidden bg-turq-800 text-turq-100 lg:block">
+      <div className="hidden bg-turq-100 text-turq-800 lg:block">
         <div className="page-wrap flex h-10 items-center justify-between text-[0.8rem]">
-          <p className="tracking-wide text-turq-200/90">
+          <p className="tracking-wide text-turq-700">
             Fundación Dr. Rodrigo Testart Tobar · Salud integral para quienes más lo necesitan
           </p>
           <div className="flex items-center gap-6">
             <a
               href={`mailto:${contact.email}`}
-              className="flex items-center gap-2 transition hover:text-turq-300"
+              className="flex items-center gap-2 transition hover:text-turq-600"
             >
               <MailIcon className="h-4 w-4" />
               {contact.email}
             </a>
             <a
               href={`tel:${contact.phone.replace(/\s/g, "")}`}
-              className="flex items-center gap-2 transition hover:text-turq-300"
+              className="flex items-center gap-2 transition hover:text-turq-600"
             >
               <PhoneIcon className="h-4 w-4" />
               {contact.phoneDisplay}
@@ -58,7 +58,7 @@ export function Header() {
               href={`https://wa.me/56955225749`}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-2 transition hover:text-turq-300"
+              className="flex items-center gap-2 transition hover:text-turq-600"
             >
               <WhatsAppIcon className="h-4 w-4" />
               {contact.whatsappDisplay}
@@ -167,7 +167,7 @@ export function Header() {
   );
 }
 
-export function SocialLinks({ light = false }: { light?: boolean }) {
+export function SocialLinks() {
   const icons = {
     YouTube: "youtube",
     Instagram: "instagram",
@@ -191,11 +191,7 @@ export function SocialLinks({ light = false }: { light?: boolean }) {
             target="_blank"
             rel="noreferrer"
             aria-label={item.label}
-            className={`inline-flex h-10 w-10 items-center justify-center rounded-full border transition ${
-              light
-                ? "border-turq-700 text-turq-200 hover:border-turq-400 hover:bg-turq-700/40 hover:text-white"
-                : "border-turq-200 text-turq-600 hover:border-turq-400 hover:bg-turq-50"
-            }`}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-turq-300 text-turq-700 transition hover:border-turq-500 hover:bg-white hover:text-turq-600"
           >
             <Icon />
           </a>

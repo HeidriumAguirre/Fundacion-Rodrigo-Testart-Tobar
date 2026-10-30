@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 import { ArrowRightIcon, CheckIcon, MailIcon, WhatsAppIcon } from "@/components/icons";
@@ -84,11 +84,10 @@ export default function ColaborarPage() {
         </div>
       </section>
 
-      <section id="donar" className="scroll-mt-32 bg-turq-800 py-20 text-white">
+      <section id="donar" className="scroll-mt-32 border-y border-turq-200 bg-turq-100 py-20">
         <div className="page-wrap grid items-center gap-12 lg:grid-cols-2">
           <div>
             <SectionHeading
-              light
               eyebrow="Donaciones"
               title="Cómo transferir tu aporte"
               description={donation.description}
@@ -96,7 +95,7 @@ export default function ColaborarPage() {
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <a
                 href={`mailto:${donation.bank.email}?subject=Aporte%20a%20la%20Fundaci%C3%B3n`}
-                className="btn btn-ghost-light"
+                className="btn btn-primary"
               >
                 <MailIcon />
                 Enviar comprobante
@@ -105,7 +104,7 @@ export default function ColaborarPage() {
                 href="https://wa.me/56955225749"
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-ghost-light"
+                className="btn btn-primary"
               >
                 <WhatsAppIcon />
                 {contact.whatsappDisplay}
@@ -113,41 +112,41 @@ export default function ColaborarPage() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-turq-700 bg-turq-900/50 p-8 backdrop-blur">
-            <h3 className="font-display text-lg font-bold text-white">Datos para transferir</h3>
+          <div className="rounded-3xl border border-turq-200 bg-white/85 p-8 backdrop-blur">
+            <h3 className="font-display text-lg font-bold text-turq-800">Datos para transferir</h3>
             <dl className="mt-6 space-y-5">
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   Nombre
                 </dt>
                 <dd className="mt-1 text-turq-50">{donation.bank.holder}</dd>
               </div>
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   Cuenta corriente
                 </dt>
                 <dd className="mt-1 text-turq-50">{donation.bank.account}</dd>
               </div>
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   RUT
                 </dt>
                 <dd className="mt-1 text-turq-50">{donation.bank.rut}</dd>
               </div>
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   Correo electrónico
                 </dt>
                 <dd className="mt-1 break-all text-turq-50">{donation.bank.email}</dd>
               </div>
             </dl>
-            <ul className="mt-7 space-y-2 border-t border-turq-700 pt-5 text-sm text-turq-100/75">
+            <ul className="mt-7 space-y-2 border-t border-turq-200 pt-5 text-sm text-ink/60">
               <li className="flex gap-2">
-                <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-turq-300" />
+                <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-turq-600" />
                 Envía tu nombre, RUT, teléfono y comprobante por correo.
               </li>
               <li className="flex gap-2">
-                <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-turq-300" />
+                <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-turq-600" />
                 También puedes coordinar un aporte en la sucursal de Concón.
               </li>
             </ul>

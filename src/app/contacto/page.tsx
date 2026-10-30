@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 import { FormularioSolicitud } from "@/components/FormularioSolicitud";
@@ -147,11 +147,10 @@ export default function ContactoPage() {
         </div>
       </section>
 
-      <section id="donar" className="scroll-mt-32 bg-turq-800 py-20 text-white">
+      <section id="donar" className="scroll-mt-32 border-y border-turq-200 bg-turq-100 py-20">
         <div className="page-wrap grid items-center gap-12 lg:grid-cols-2">
           <div>
             <SectionHeading
-              light
               eyebrow="Aportes y donaciones"
               title="Cada acción cuenta, y la tuya es un eslabón de esta cadena de ayuda"
               description={donation.description}
@@ -162,8 +161,8 @@ export default function ContactoPage() {
                 "Envíanos un correo con tu nombre, tu RUT, tu teléfono y el comprobante.",
                 "Te confirmamos la recepción y acreditamos tu contribución al programa de subvención.",
               ].map((step, index) => (
-                <li key={step} className="flex gap-4 text-turq-100/85">
-                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-turq-400/20 font-display text-sm font-bold text-turq-200">
+                <li key={step} className="flex gap-4 text-ink/70">
+                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-turq-200 font-display text-sm font-bold text-turq-700">
                     {index + 1}
                   </span>
                   <span className="leading-relaxed">{step}</span>
@@ -172,35 +171,35 @@ export default function ContactoPage() {
             </ol>
           </div>
 
-          <div className="rounded-3xl border border-turq-700 bg-turq-900/50 p-8 backdrop-blur">
-            <h3 className="font-display text-lg font-bold text-white">Datos para transferir</h3>
+          <div className="rounded-3xl border border-turq-200 bg-white/85 p-8 backdrop-blur">
+            <h3 className="font-display text-lg font-bold text-turq-800">Datos para transferir</h3>
             <dl className="mt-6 space-y-5">
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   Nombre
                 </dt>
                 <dd className="mt-1 text-turq-50">{donation.bank.holder}</dd>
               </div>
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   Cuenta corriente
                 </dt>
                 <dd className="mt-1 text-turq-50">{donation.bank.account}</dd>
               </div>
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   RUT
                 </dt>
                 <dd className="mt-1 text-turq-50">{donation.bank.rut}</dd>
               </div>
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   Correo electrónico
                 </dt>
                 <dd className="mt-1 break-all text-turq-50">{donation.bank.email}</dd>
               </div>
               <div>
-                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-300">
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-turq-600">
                   WhatsApp
                 </dt>
                 <dd className="mt-1 text-turq-50">{donation.bank.whatsapp}</dd>
@@ -208,7 +207,7 @@ export default function ContactoPage() {
             </dl>
             <a
               href={`mailto:${donation.bank.email}?subject=Aporte%20a%20la%20Fundaci%C3%B3n`}
-              className="btn btn-ghost-light mt-8 w-full"
+              className="btn btn-primary mt-8 w-full"
             >
               Enviar comprobante
               <ArrowRightIcon />

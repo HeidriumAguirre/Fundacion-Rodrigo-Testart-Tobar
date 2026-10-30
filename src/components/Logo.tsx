@@ -31,23 +31,15 @@ export function LogoMark({ className = "h-11 w-11" }: { className?: string }) {
   );
 }
 
-export function Logo({ light = false }: { light?: boolean }) {
+export function Logo() {
   return (
     <span className="flex items-center gap-3">
       <LogoMark className="h-11 w-11 shrink-0" />
       <span className="flex flex-col leading-none">
-        <span
-          className={`text-[0.65rem] font-semibold uppercase tracking-[0.22em] ${
-            light ? "text-turq-300" : "text-turq-600"
-          }`}
-        >
+        <span className="text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-turq-600">
           Fundación
         </span>
-        <span
-          className={`mt-1 font-display text-[0.95rem] font-bold leading-tight sm:text-base ${
-            light ? "text-white" : "text-turq-800"
-          }`}
-        >
+        <span className="mt-1 font-display text-[0.95rem] font-bold leading-tight text-turq-800 sm:text-base">
           Dr. Rodrigo Testart Tobar
         </span>
       </span>
@@ -55,10 +47,10 @@ export function Logo({ light = false }: { light?: boolean }) {
   );
 }
 
-export function LogoLink({ light = false }: { light?: boolean }) {
+export function LogoLink() {
   return (
     <Link href="/" className="inline-flex items-center" aria-label="Ir al inicio">
-      <Logo light={light} />
+      <Logo />
     </Link>
   );
 }
